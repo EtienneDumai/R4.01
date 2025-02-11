@@ -6,7 +6,7 @@ function multiplie(mult1 = 8, mult2 = 8) {
     return mult1 * mult2;
 }
 function affiche(){
-    alert("La multiplication de " + a + " et " + b +" est : " + multiplie(a,b) + "le resultat de la multiplication de " +b+ " 8 est de : " + multiplie(b));
+    alert("La multiplication de " + a + " et " + b +" est : " + multiplie(a,b) + " le resultat de la multiplication de " +b+ "x8 est de : " + multiplie(b));
 }
 
 var tab = [-2, 1, 4];
