@@ -9,7 +9,7 @@ function affiche(){
     alert("La multiplication de " + a + " et " + b +" est : " + multiplie(a,b) + " le resultat de la multiplication de " +b+ "x8 est de : " + multiplie(b));
 }
 
-var tab = [-2, 1, 4];
+var tab = [-2, 1, 4,-5, 100, -15];
 
 function multiplier2(x) {
     for (var i = 0; i < tab.length; i++) {
@@ -29,6 +29,6 @@ function affiche2() {
 // Fonction de tri
 function trier(tab) {
     // Tri du tableau
-    tab.sort();
+    tab.sort(function(a, b) {return a-b});
     alert(tab);
 }
