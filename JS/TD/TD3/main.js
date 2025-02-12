@@ -10,17 +10,12 @@ function calculer(a,b){
     }
 }
 function calculer2(){
-    alert("calculer2");
     var a = document.getElementById("a").value;
     var b = document.getElementById("b").value;
-    
-    if (typeof a === 'number' && typeof b === 'number') {
-        alert(a+b);
-        return a+b;
-    } else {
-        alert("else")
-        return "Erreur";
-    }
+    parseInt(a);
+    parseInt(b);
+    var res = calculer(a, b);
+    alert(res);
 }
 document.getElementById("f").addEventListener("submit", function(event) {
     event.preventDefault(); // Prevent form submission
