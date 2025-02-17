@@ -14,7 +14,7 @@ class CreateReservationsTable extends Migration
     public function up()
     {
         Schema::create('reservations', function (Blueprint $table) {
-            table->id("codeReservation");
+            $table->id("codeReservation");
             $table->string("dateReservation");
             $table->string("dateAller");
             $table->string("dateRetour");
