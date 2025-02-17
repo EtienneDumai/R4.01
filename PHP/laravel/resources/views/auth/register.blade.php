@@ -93,6 +93,7 @@
                                     {{ __('Register') }}
                                 </button>
                             </div>
+                            <a href="{{ route('home') }}" class="btn btn-link">Home</a>
                         </div>
                     </form>
                 </div>
