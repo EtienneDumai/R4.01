@@ -16,17 +16,20 @@
     <!-- Question 2 - Afficher somFor -->
     <p id="SomFor"></p>
     <script>
-        document.getElementById("SomFor").innerText = "SomFor(5) = " + somRec(5);
+        document.getElementById("SomFor").innerText = "SomFor(5) = " + somFor(5);
     </script>
 
     <!-- Appel de SomRec avec prompt -->
     <p id ="promptSomRec"></p>
+    <!-- Appel de SomFor avec prompt -->    
+    <p id ="promptSomFor"></p>
 
     <script src="ex2.js"></script>
 
     <script>
         let nbSaisi = parseInt(prompt("Saisissez un nombre entier positif :", 0), 10);
         document.getElementById("promptSomRec").innerText = "SomRec(" + nbSaisi + ") = " + somRec(nbSaisi);
+        document.getElementById("promptSomFor").innerText = "SomFor(" + nbSaisi + ") = " + somFor(nbSaisi);
     </script>
 </body>
 </html>
