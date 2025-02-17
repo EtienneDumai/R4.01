@@ -14,7 +14,9 @@ class CreateDossierDeLocsTable extends Migration
     public function up()
     {
         Schema::create('dossier_de_locs', function (Blueprint $table) {
-            $table->id('id_dossier');
+            $table->id("numeroDossier");
+            $table->boolean("estPaye");
+            $table->foreignId("codeReservation")->constrained("reservations")->references("codeReservation")->on("reservations")->onDelete('cascade');
             $table->timestamps();
         });
     }

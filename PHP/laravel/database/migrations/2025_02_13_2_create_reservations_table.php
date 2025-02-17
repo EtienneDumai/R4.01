@@ -14,7 +14,11 @@ class CreateReservationsTable extends Migration
     public function up()
     {
         Schema::create('reservations', function (Blueprint $table) {
-            $table->id();
+            table->id("codeReservation");
+            $table->string("dateReservation");
+            $table->string("dateAller");
+            $table->string("dateRetour");
+            $table->foreignId("NumeroClient")->constrained("clients")->references("NumeroClient")->on("clients")->onDelete('cascade');
             $table->timestamps();
         });
     }
