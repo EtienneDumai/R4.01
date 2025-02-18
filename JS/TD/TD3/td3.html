@@ -1,18 +1,26 @@
-<html> 
-<head> 
-  <title>Écriture d'une fonction avec arguments</title> 
-  <meta charset="UTF-8"> 
-</head> 
+<html>
+
+<head>
+  <title>Écriture d'une fonction avec arguments</title>
+  <meta charset="UTF-8">
+</head>
+
 <body>
-    <!-- Qiuesiton fonciton calculer -->
-    <form id="f" >
-        <input type="number" name="a" id="a" placeholder="Entrez un nombre">
-        <input type="number" name="b" id="b" placeholder="Entrez un nombre">
-        <input type="submit" value="Calculer">
-    </form>
+  <!-- Qiuesiton fonciton calculer -->
+  <form id="f">
+    <input type="number" name="a" id="a" placeholder="Entrez un nombre">
+    <input type="number" name="b" id="b" placeholder="Entrez un nombre">
+    <button type="submit" onclick="calculer2()" >Calculer</button>
+  </form>
 
+  <form id="f2">
+    <input type="number" name="a" id="a2" placeholder="Entrez un nombre">
+    <input type="number" name="b" id="b2" placeholder="Entrez un nombre">
+    <input type="number" placeholder="guess it" name="guess" id ="nbrGuess" max="100" min="-100">
+    <button type="submit" onclick="fctAleaGuess()">Guess</button>
+  </form>
 
+  <script src="main.js"></script>
+</body>
 
-    <script src="main.js"></script>
-</body> 
-</html> 
+</html>
