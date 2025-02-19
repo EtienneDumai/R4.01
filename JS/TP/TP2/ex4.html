@@ -3,14 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Exercice 4</title>
 </head>
 <body>
-    <div id ="tables">
-        <p id="calcul1">3*2</p><p> : </p><input type="text" id="resultat1"></input>
-        <p id="calcul2">6*7</p><p> : </p><input type="text" id="resultat2"></input>
-        <p id="calcul3">4*4</p><p> : </p><input type="text" id="resultat3"></input>
-        <p id="calcul4">3*5</p><p> : </p><input type="text" id="resultat4"></input>
-    </div>
+    <form id="calculForm" style="display: flex; flex-direction: column;">
+        <div class="calculs" style="display: flex; flex-direction: row;">
+            <label class="calcul">2 + 3 = </label>
+            <input type="text" name="resultat">
+        </div>
+        <div class="calculs" style="display: flex; flex-direction: row;">
+            <label class="calcul">5 * 4 = </label>
+            <input type="text" name="resultat">
+        </div>
+        <div class="calculs" style="display: flex; flex-direction: row;">
+            <label class="calcul">10 - 6 = </label>
+            <input type="text" name="resultat">
+        </div>
+        <div class="calculs" style="display: flex; flex-direction: row;">
+            <label class="calcul">8 / 2 = </label>
+            <input type="text" name="resultat">
+        </div>
+
+        <button type="submit" id="valider">Valider</button>
+    </form>
+
+    <script src="ex4.js">
+        
+    </script>
 </body>
 </html>
